@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ch-Gram</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Oleo+Script" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/materialize.min.css">
+  <link rel="stylesheet" href="public/css/app.css">
+</head>
+<body>
+  <section class="main-container" id="main-container">
+    <div class="container">
+      <div class="row">
+        <div class="col s10 push-s1">
+          <div class="row">
+            <div class="col m5 hide-on-small-only">
+              <img src="public/img/iphone.png" alt="" class="iphone">
+            </div>
+            <div class="col s12 m7">
+              <div class="row">
+                <div class="signup-box">
+                  <h1 class="chgram">Ch-Gram</h1>
+                  <form class="signup-form">
+                    <h2 class="signup-form__title">Registrate para ver fotos de tus amigos estudiando en EDTeam</h2>
+                    <div class="section">
+                      <a href="#" class="btn btn-fb hide-on-small-only">Iniciar sesión con facebook</a>
+                      <a href="#" class="btn btn-fb hide-on-med-and-up">Iniciar sesión</a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="section">
+                      <input type="text" name="email" placeholder="Correo electrónico">
+                      <input type="text" name="name" placeholder="Nombre completo">
+                      <input type="text" name="username" placeholder="Nombre de usuario">
+                      <input type="password" name="password" placeholder="Contraseña">
+                      <button class="btn btn-signup waves-effect waves-light" type="submit">Regístrate</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="login-box">
+                  ¿Tienes un cuenta?
+                  <a href="/signin">Entrar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l3 center-align">
+          <!-- Dropdown Trigger -->
+          <a class='dropdown-button btn btn-flat' href='#' data-activates='dropdown1'>Idioma</a>
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="">Español</a></li>
+            <li><a href="">Inglés</a></li>
+          </ul>
+        </div>
+        <div class="col s12 l3 push-l6 center-align">
+          © Ch-Gram 2017
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="public/js/jq.min.js"></script>
+  <script src="public/js/materialize.min.js"></script>
+</body>
+</html>

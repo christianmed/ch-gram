@@ -1,0 +1,56 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Ch-Gram
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Oleo+Script', rel='stylesheet')
+    link(rel='stylesheet', href='public/css/materialize.min.css')
+    link(rel='stylesheet', href='public/css/app.css')
+  body
+    section#main-container.main-container
+      .container
+        .row
+          .col.s10.push-s1
+            .row
+              .col.m5.hide-on-small-only
+                img.iphone(src='public/img/iphone.png', alt='')
+              .col.s12.m7
+                .row
+                  .signup-box
+                    h1.chgram Ch-Gram
+                    form.signup-form
+                      h2.signup-form__title Registrate para ver fotos de tus amigos estudiando en EDTeam
+                      .section
+                        a.btn.btn-fb.hide-on-small-only(href='#') Iniciar sesi&oacute;n con facebook
+                        |  
+                        a.btn.btn-fb.hide-on-med-and-up(href='#') Iniciar sesi&oacute;n
+                      .divider
+                      .section
+                        input(type='text', name='email', placeholder='Correo electrónico')
+                        |  
+                        input(type='text', name='name', placeholder='Nombre completo')
+                        |  
+                        input(type='text', name='username', placeholder='Nombre de usuario')
+                        |  
+                        input(type='password', name='password', placeholder='Contraseña')
+                        |  
+                        button.btn.btn-signup.waves-effect.waves-light(type='submit') Reg&iacute;strate
+                .row
+                  .login-box
+                    | &iquest;Tienes un cuenta? 
+                    a(href='/signin') Entrar
+    footer.site-footer
+      .container
+        .row
+          .col.s12.l3.center-align
+            a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
+            ul#dropdown1.dropdown-content
+              li
+                a(href='') Espa&ntilde;ol
+              li
+                a(href='') Ingl&eacute;s
+          .col.s12.l3.push-l6.center-align  &copy; Ch-Gram 2017
+    script(src='public/js/jq.min.js')
+    script(src='public/js/materialize.min.js')

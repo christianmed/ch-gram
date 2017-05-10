@@ -1,0 +1,26 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Ch-Gram
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Oleo+Script', rel='stylesheet')
+    link(rel='stylesheet', href='css/app.css')
+  body
+    section#main-container.main-container
+    footer.site-footer
+      .container
+        .row
+          .col.s12.l3.center-align
+            a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
+            ul#dropdown1.dropdown-content
+              li
+                a(href='') Español
+              li
+                a(href='') Inglés
+          .col.s12.l3.push-l6.center-align  &copy; Ch-Gram 2017
+
+
+    script(src='js/jq.min.js')
+    script(src='js/materialize.min.js')
