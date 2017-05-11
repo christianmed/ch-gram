@@ -4,6 +4,15 @@
   "main": "server.js",
   "author": "Christian Medina",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch & node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "materialize-css": "^0.98.2",
+    "page": "^1.7.1"
+  },
   "devDependencies": {
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
@@ -12,11 +21,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "jshint": "^2.9.4",
-    "pug": "^2.0.0-rc.1"
-  },
-  "scripts": {},
-  "dependencies": {
-    "express": "^4.15.2",
-    "materialize-css": "^0.98.2"
+    "pug": "^2.0.0-rc.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
   }
 }
