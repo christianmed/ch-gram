@@ -4,6 +4,13 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const pref = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
+const babel = require('babelify');
+const browserify = require('browserify');
+
+gulp.task('pug', () => {
+  gulp.src('./index.pug')
+    .pipe(gulp.dest('./views/'));
+});
 
 gulp.task('styles', () => {
   return gulp.src('index.scss')
@@ -23,4 +30,4 @@ gulp.task('watch', ['styles', 'assets'], () => {
   gulp.watch('./assets/**/*', ['assets']);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['pug', 'watch']);
